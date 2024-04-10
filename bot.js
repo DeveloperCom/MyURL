@@ -2,9 +2,9 @@ const TelegramBot = require('node-telegram-bot-api');
 
 const experss=require('express')
 const app=experss()
-const port=3001
+const port=process.env.PORT
 
-const token ="6998821258:AAHpNh8JCZM074v9X2CqdmXgtXLfUYVOGjs"
+const token =process.env.API_KEY
 const bot = new TelegramBot(token, { polling: true });
 
 
@@ -46,5 +46,5 @@ app.get('/',(req,res)=>{
 
 
 app.listen(port,()=>{
-    console.log("http//:localhost:3001")
+    console.log("HAY AYAN YOUR BOT IS LIVE")
 })
