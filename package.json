@@ -1,0 +1,16 @@
+{
+  "name": "isurl_bot",
+  "version": "1.0.0",
+  "description": "Telegram Bot",
+  "main": "bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node bot.js"
+  },
+  "author": "Ayan Biswas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-telegram-bot-api": "^0.65.1"
+  }
+}
